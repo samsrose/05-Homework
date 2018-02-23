@@ -1,0 +1,152 @@
+/* CSS for samrose.github.io / samro.se -- Homework 05  */
+
+// Colors
+$c__blue:#1F3A93;
+$c__white:#fefefe;
+$c__grey:#b1b1b5;
+$c__red:#ef433a;
+$c__green:#51f96a;
+$c__yellow:#ffb536;
+$c__black:#000;
+
+*, *:hover {
+  cursor: url(../media/img/cursor.png), auto;
+}
+
+html, body {
+  margin: 0;
+  padding:0;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background:$c__white;
+  font-family: 'VT323', monospace;
+  display:block;
+}
+.game_cursor {
+  cursor: progress;
+  // cursor: url(../media/img/cursor.png), auto;
+}
+.jumbotron {
+    box-sizing: border-box;
+    height: 15em;
+    width: 50vw;
+    margin: 0 auto;
+    padding: 15px 10px;
+    margin-top: 5em;
+    background-color: #000;
+    border: 3px solid #000;
+    box-shadow: rgb(33, 33, 33) 5px 5px 5px;
+    background: url(../media/img/BG.jpg);
+    background-size: cover;
+    z-index: 0;
+    
+  & h2.text-center a {
+    color: $c__black;
+    font-size: 1.6rem;
+    margin-top: -2px;
+    padding: 3px 5px;
+    background-color:rgba($c__yellow, 0.95);
+    border: 1px solid rgba($c__yellow, 0.5);
+    width: 50%;
+    letter-spacing: 2px;
+    border-radius: 15px;
+    font-kerning: unset;
+    margin: 0 auto;
+    &:hover {
+      background-color:rgba(149, 117, 57, 0.95);
+      color: #e87f33;
+      text-decoration: none;
+      transition: all 0.25s ease-in-out;
+    }
+  }
+  & h1.text-center {
+    font-size: 5.2rem;
+    color: $c__yellow;
+    text-shadow: $c__black 3px 3px 5px;
+  }
+}
+.text-center { 
+  text-align: center;
+}
+  .main-button-container {
+    margin-top: 70px;
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #fff;
+    // border: 3px solid rgba($c__yellow, 1);
+    border-radius: 3px;
+    transition-delay: 0.5s;
+    transition-duration: 1.5s;
+    transition-timing-function: linear;
+  }
+  .timer-p {
+    margin-top: 150px;
+    color: rgb(255, 31, 31);
+    text-shadow: 0px 1px 10px $c__yellow;
+    // cursor: default;
+  }
+  //setting the transition value appears
+  #polandball,
+  #polandball:hover 
+  .btn-primary, 
+  .btn-primary:hover {
+    transition: all 0.25s ease-in-out; 
+  }
+  .btn-primary {
+    background-color: orange;
+    color: $c__black;
+    &:hover {
+      color: $c__white;
+      background-color: black;
+    }
+  }
+  .answer {
+    padding-top: 7px;
+    height: 45px;
+    color: $c__black;
+    padding-left: 14px;
+    background-color: $c__white;
+    border-radius: 4px;
+    font-weight: 500;
+    border: 2px solid #fff;
+    transition-delay: 1s;
+    transition-duration: 0.5s;
+    transition-property: all;
+    transition-timing-function: linear;
+    &:hover {
+      border: 2px solid #000;
+      transition: all 1s ease-in-out;
+      // cursor: progress;
+    }
+  }
+  span#credits {
+    color: #000;
+    // border: 2px solid rgba(85, 85, 85, 0.107);
+    padding: 8px 10px;
+    position: absolute;
+    left: 15px;
+    top: 15px;
+    width: 10vw;
+    height: 10vh;
+    content: "created by sam rose";
+    font-size: 1.5em;
+    text-align: center;
+    line-height: 1;
+    z-index: -50;
+  }
+  .img-wrong {
+    margin-top: 40px;
+    width: 356px;
+  }
+  .first-answer {
+    margin-top: 40px;
+  }
+  .reset-button {
+    margin-top: 40px;
+  }
+  .summary-correct {
+    margin-top: 40px;
+  }
